@@ -24,3 +24,19 @@ const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: Butt
 }
 
 export default Button;
+
+import React from 'react';
+import { ButtonProps } from '@/interface';
+
+const Button: React.FC<ButtonProps> = ({ action, buttonLabel, buttonBackgroundColor }) => {
+  return (
+    <button
+      onClick={action}
+      className={`px-4 py-2 text-white rounded-md bg-${buttonBackgroundColor}-500 hover:bg-${buttonBackgroundColor}-600`}
+    >
+      {buttonLabel}
+    </button>
+  );
+};
+
+export default Button;
