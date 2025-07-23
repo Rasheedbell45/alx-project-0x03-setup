@@ -5,15 +5,15 @@ interface PageRouteProps {
   pageRoute: string
 }
 
-export default function Home() {
-  const router = useRouter()
-  const Home = () => {
+const Home = () => {
     return (
      <div>
       <h1> Welcome to Splash App </h1>
      </div>
 }
-export default Home;
+
+export default function Home() {
+  const router = useRouter()
   
   // Imeperative routing with useRouter
   const routeToNextPage  = ({ pageRoute }: PageRouteProps) => {
