@@ -12,6 +12,8 @@ const Home = () => {
      </div>
 }
 
+const router = useRouter();
+
 export default function Home() {
   const router = useRouter()
   
