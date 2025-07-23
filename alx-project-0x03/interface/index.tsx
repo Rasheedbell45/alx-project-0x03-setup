@@ -2,9 +2,15 @@ export interface HomePageProps {
   title: string;
 }
 
+export interface PageRouteProps {
+  pageRoute: string;
+}
+
 export interface ButtonProps {
-  label: string;
-  onClick: () => void;
+  buttonLabel: string;
+  buttonSize?: string;
+  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green';
+  action?: () => void;
 }
 
 export interface LayoutProps {
